@@ -376,6 +376,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127638280}
   m_CullTransparentMesh: 1
+--- !u!1 &162442810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162442812}
+  - component: {fileID: 162442811}
+  m_Layer: 0
+  m_Name: UIStateMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &162442811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162442810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc93dc14cf0cde44cb9e005bea7591e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelInicio: {fileID: 1892512262}
+  panelPausa: {fileID: 2146077590}
+  panelAdvertencia: {fileID: 1290551982}
+--- !u!4 &162442812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162442810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 551.18243, y: 417.68723, z: -4.486548}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &195964616
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,9 +506,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2146077593}
-        m_TargetAssemblyTypeName: InterfazPausa, Assembly-CSharp
-        m_MethodName: SalirDelJuego
+      - m_Target: {fileID: 162442811}
+        m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
+        m_MethodName: MostrarAdvertencia
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -535,19 +582,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240143672}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1196232121}
-  m_Father: {fileID: 2146077592}
+  m_Father: {fileID: 580000617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 960, y: 539.7364}
+  m_SizeDelta: {x: 1920, y: 1079.4729}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240143674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,8 +877,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2146077593}
-        m_TargetAssemblyTypeName: InterfazPausa, Assembly-CSharp
+      - m_Target: {fileID: 162442811}
+        m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
         m_MethodName: CancelarSalida
         m_Mode: 1
         m_Arguments:
@@ -1553,9 +1600,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892512265}
-        m_TargetAssemblyTypeName: InterfazInicio, Assembly-CSharp
-        m_MethodName: EmpezarJuego
+      - m_Target: {fileID: 162442811}
+        m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
+        m_MethodName: IniciarJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1895,6 +1942,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 778155919}
+  - {fileID: 240143673}
   - {fileID: 1544500994}
   - {fileID: 889673761}
   - {fileID: 2049936087}
@@ -2357,7 +2405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -PAUSAR
+  m_text: -Pausar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2390,7 +2438,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2673,9 +2721,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2146077593}
-        m_TargetAssemblyTypeName: InterfazPausa, Assembly-CSharp
-        m_MethodName: AdvertenciaDeGuardarPartida
+      - m_Target: {fileID: 162442811}
+        m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
+        m_MethodName: SalirAlMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2936,39 +2984,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778155918}
   m_CullTransparentMesh: 1
---- !u!1 &810775675
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 810775676}
-  m_Layer: 0
-  m_Name: Pausado
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &810775676
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810775675}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1457.6763, y: -746.56396, z: 10.326054}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1193269769}
-  - {fileID: 1290551983}
-  m_Father: {fileID: 2146077592}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832077614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3129,7 +3144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -149, y: 62.113}
+  m_AnchoredPosition: {x: -174, y: 62.736}
   m_SizeDelta: {x: 105.098, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889673762
@@ -3570,7 +3585,7 @@ RectTransform:
   - {fileID: 1276605838}
   - {fileID: 195964617}
   - {fileID: 625856864}
-  m_Father: {fileID: 810775676}
+  m_Father: {fileID: 2146077592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3668,7 +3683,7 @@ RectTransform:
   m_GameObject: {fileID: 1196232120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 647294753}
@@ -3676,8 +3691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 486}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -479}
+  m_SizeDelta: {x: 114.6, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196232122
 MonoBehaviour:
@@ -3723,8 +3738,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2146077593}
-        m_TargetAssemblyTypeName: InterfazPausa, Assembly-CSharp
+      - m_Target: {fileID: 162442811}
+        m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
         m_MethodName: PausarJuego
         m_Mode: 1
         m_Arguments:
@@ -3994,8 +4009,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2146077593}
-        m_TargetAssemblyTypeName: InterfazPausa, Assembly-CSharp
+      - m_Target: {fileID: 162442811}
+        m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
         m_MethodName: ReanudarJuego
         m_Mode: 1
         m_Arguments:
@@ -4193,12 +4208,12 @@ GameObject:
   - component: {fileID: 1290551985}
   - component: {fileID: 1290551984}
   m_Layer: 5
-  m_Name: ADVERTENCIA AL SALIR DEL JUEGO
+  m_Name: UI_Advertencia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1290551983
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4216,7 +4231,7 @@ RectTransform:
   - {fileID: 279672530}
   - {fileID: 767290152}
   - {fileID: 771072116}
-  m_Father: {fileID: 810775676}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5687,7 +5702,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1892512264}
-  - component: {fileID: 1892512265}
   m_Layer: 0
   m_Name: UI_Inicio
   m_TagString: Untagged
@@ -5711,26 +5725,6 @@ Transform:
   - {fileID: 1949476095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1892512265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892512262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8cd3bd1de87c7442ba581d7d87c3a70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tituloDelJuego: {fileID: 1436177171}
-  nombreDelCreador: {fileID: 1442617303}
-  botonJugar: {fileID: 440680568}
-  interfazDeInicio: {fileID: 1949476091}
-  tiempoDeAnimacion: 1
-  tipoDeCurvaDelTituloDelJuego: 24
-  tipoDeCurvaDelNombreDelCreador: 24
-  tipoDeCurvaDelBoton: 24
 --- !u!1 &1949476091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,7 +6002,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 149, y: 62.113}
+  m_AnchoredPosition: {x: 175, y: 62.736}
   m_SizeDelta: {x: 105.098, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049936088
@@ -6495,7 +6489,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2146077592}
-  - component: {fileID: 2146077593}
   m_Layer: 0
   m_Name: UI_Pausa
   m_TagString: Untagged
@@ -6516,26 +6509,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 240143673}
-  - {fileID: 810775676}
+  - {fileID: 1193269769}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2146077593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146077590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d120e5e40b035624a81fc3b5d6074c50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  botonPausar: {fileID: 1196232120}
-  pausado: {fileID: 810775675}
-  interfazDeAdvertencia: {fileID: 1290551982}
-  interfazPausa: {fileID: 1193269768}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6549,3 +6525,5 @@ SceneRoots:
   - {fileID: 1892512264}
   - {fileID: 580000617}
   - {fileID: 607134676}
+  - {fileID: 1290551983}
+  - {fileID: 162442812}
