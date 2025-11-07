@@ -7,7 +7,7 @@ public class InterfazPausa : MonoBehaviour
     [SerializeField] GameObject pausado;
     [SerializeField] GameObject interfazDeAdvertencia;
     [SerializeField] GameObject interfazPausa;
-    [SerializeField] GameObject interfazDeInicio;
+    
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,12 +41,13 @@ public class InterfazPausa : MonoBehaviour
     {
         botonPausar.gameObject.SetActive(false);
         pausado.SetActive(false);
-        interfazDeInicio.SetActive(true);
+        
     }
     public void CancelarSalida()
     {
         interfazDeAdvertencia.SetActive(false);
         interfazPausa.SetActive(true);
     }
+
     
 }
