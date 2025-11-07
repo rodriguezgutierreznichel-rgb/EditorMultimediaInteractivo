@@ -6,6 +6,8 @@ public class EstadoInicio : IEstado
     {
         Debug.Log("Entré al estado de INICIO");
         cerebro.panelInicio.SetActive(true);
+
+       
     }
 
     public void Ejecutar(UIStateMachine cerebro)

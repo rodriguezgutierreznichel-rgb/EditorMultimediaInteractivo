@@ -1,10 +1,12 @@
 using UnityEngine;
-
+using TMPro;
 public class UIStateMachine : MonoBehaviour
 {
     private IEstado estadoActual;
 
     public GameObject panelInicio, panelPausa, panelAdvertencia;
+
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
