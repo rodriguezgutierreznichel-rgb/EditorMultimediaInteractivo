@@ -6,6 +6,7 @@ public class EstadoInicio : IEstado
     {
         Debug.Log("Entré al estado de INICIO");
         cerebro.panelInicio.SetActive(true);
+        cerebro.panelAccion.SetActive(false);
 
        
     }
@@ -19,5 +20,6 @@ public class EstadoInicio : IEstado
     {
         Debug.Log("Salí del estado de INICIO");
         cerebro.panelInicio.SetActive(false);
+        cerebro.panelAccion.SetActive(true);
     }
 }

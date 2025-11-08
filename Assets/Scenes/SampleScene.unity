@@ -409,6 +409,8 @@ MonoBehaviour:
   panelInicio: {fileID: 1892512262}
   panelPausa: {fileID: 2146077590}
   panelAdvertencia: {fileID: 1290551982}
+  panelAccion: {fileID: 0}
+  panelObjetos: {fileID: 0}
 --- !u!4 &162442812
 Transform:
   m_ObjectHideFlags: 0
@@ -2743,7 +2745,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 162442811}
         m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
-        m_MethodName: SalirAlMenu
+        m_MethodName: SalirDelJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
