@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class CreadorDeObjetos : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class CreadorDeObjetos : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -50,7 +50,7 @@ public class CreadorDeObjetos : MonoBehaviour
     {
         if (currentGameObject != null && Input.GetMouseButtonDown(0))
         {
-            // Suelta el objeto y permite crear otro más tarde
+            // Suelta el objeto y permite crear otro mï¿½s tarde
             currentGameObject = null;
         }
     }
@@ -62,7 +62,7 @@ public class CreadorDeObjetos : MonoBehaviour
 
         if (rotar != 0f)
         {
-            rotacionY += rotar * 120f; // sensibilidad
+            rotacionY += rotar * 50f; // sensibilidad
             currentGameObject.transform.rotation = Quaternion.Euler(0, rotacionY, 0);
         }
     }
@@ -75,3 +75,4 @@ public class CreadorDeObjetos : MonoBehaviour
         }
     }
 }
+
