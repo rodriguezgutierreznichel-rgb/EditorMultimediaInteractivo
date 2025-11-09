@@ -470,7 +470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67346088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 0254693cc03c2d74ca475efd4f7f018a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &67346088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1790,7 +1802,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 263511680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 4af219c319782d544a577f53b1b11b9f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &263511680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3432,7 +3456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489923746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: b1a164dae5661b04aac0c83f0da5409e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &489923746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3553,7 +3589,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 492739135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 17582b95cc3fdfe4fa7316c9bfa4cead, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &492739135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4364,7 +4412,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 640046839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: e521a139922cb024690f21ddbd0e8080, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &640046839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4621,7 +4681,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 660472294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 4ded862f9bb81db498a253c216a4a525, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &660472294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5167,7 +5239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 772145559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: faa0b6158a802a6419eed71ba89f96fd, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &772145559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5363,7 +5447,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 791338915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 02df51b9af7fac54bace1f827ee35a6e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &791338915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5880,7 +5976,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 877765377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: f6b397bc1a84fef46b787ae3bfaf16af, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &877765377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6001,7 +6109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 887068507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: a8b75211c27ad4341b3cd8521d69a2d5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &887068507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6517,7 +6637,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 919774552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: d0cbacfdd08d1ef41a5477997c9e4c84, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &919774552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7390,7 +7522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1159710219}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 44750089f5b974a4c87eda359d062dda, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1159710219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9217,7 +9361,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1503222141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: f402f8b0c04794141b05cfb5da0d0d76, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1503222141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10000,7 +10156,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1663255269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: f2de7e47eba20bd42aa810df0be7068b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1663255269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10121,7 +10289,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1666183883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 56fa2c59182debe4291ce4298f8bf749, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1666183883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10347,7 +10527,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1690463768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 98852dd30416f3f449572cadfbcfbad8, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1690463768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11224,7 +11416,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1886991379}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: bd9715a62b6abfa40856255f4bd7277f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1886991379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11482,7 +11686,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1989928525}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 0254693cc03c2d74ca475efd4f7f018a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1989928525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11603,7 +11819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037702988}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531216043}
+        m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
+        m_MethodName: SeleccionarPrefab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 4e54462af2d79cf48974664eae3012c7, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2037702988
 MonoBehaviour:
   m_ObjectHideFlags: 0

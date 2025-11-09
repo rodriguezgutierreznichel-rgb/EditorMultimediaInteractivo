@@ -58,11 +58,11 @@ public class CreadorDeObjetos : MonoBehaviour
     {
         if (currentGameObject == null) return;
 
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        float rotar = Input.GetAxis("Rueda del raton");
 
-        if (scroll != 0f)
+        if (rotar != 0f)
         {
-            rotacionY += scroll * 120f; // sensibilidad
+            rotacionY += rotar * 120f; // sensibilidad
             currentGameObject.transform.rotation = Quaternion.Euler(0, rotacionY, 0);
         }
     }
