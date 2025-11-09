@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EliminarObjeto : MonoBehaviour
 {
-    public static bool deleteMode = false; // Indica si el modo eliminar está activado
+    bool modoEliminar = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,25 +13,45 @@ public class EliminarObjeto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Detecta clic derecho
-        if (Input.GetMouseButtonDown(1)) // 1 = clic derecho
+        if (!modoEliminar) return;
+
+        // Clic izquierdo: intentar eliminar objeto
+        if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                Destroy(hit.transform.gameObject);
+                GameObject obj = hit.collider.gameObject;
+
+                if (obj.CompareTag("Escenario"))
+                {
+                    // No hace nada si clicas el escenario
+                    return;
+                }
+
+                Destroy(obj);
+                Debug.Log("Objeto eliminado: " + obj.name);
+                modoEliminar = false; // desactiva modo tras eliminar 1 objeto
             }
         }
+
+        // Clic derecho cancela el modo eliminar
+        if (Input.GetMouseButtonDown(1))
+        {
+            modoEliminar = false;
+            Debug.Log("Modo eliminar cancelado con clic derecho");
+        }
+    }
+    public void ActivarModoEliminar()
+    {
+        modoEliminar = true;
+        Debug.Log("Modo eliminar activado");
     }
 
-    // Este método se conecta al botón UI
-    public void ToggleDeleteMode()
-    {
-        deleteMode = !deleteMode;
-        Debug.Log("Modo eliminar: " + deleteMode);
-    }
+
+
 }
 
 

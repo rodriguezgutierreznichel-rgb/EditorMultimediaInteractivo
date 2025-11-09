@@ -27,6 +27,11 @@ public class CreadorDeObjetos : MonoBehaviour
 
         // Crear uno nuevo listo para mover
         currentGameObject = Instantiate(prefabSeleccionado);
+
+        if (currentGameObject.GetComponent<Collider>() == null)
+        {
+            currentGameObject.AddComponent<BoxCollider>();
+        }
     }
 
     void MoverObjeto()
