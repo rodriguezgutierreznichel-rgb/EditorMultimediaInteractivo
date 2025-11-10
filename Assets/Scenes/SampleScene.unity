@@ -471,7 +471,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -669,7 +669,7 @@ GameObject:
   - component: {fileID: 127638283}
   - component: {fileID: 127638282}
   m_Layer: 5
-  m_Name: Texto de empezar
+  m_Name: Texto de reanudar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -803,7 +803,6 @@ GameObject:
   m_Component:
   - component: {fileID: 162442812}
   - component: {fileID: 162442811}
-  - component: {fileID: 162442813}
   m_Layer: 0
   m_Name: UIStateMachine
   m_TagString: Untagged
@@ -843,25 +842,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &162442813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162442810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044a16b94bdae44459d0d0adf606f44c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  botonEmpezar: {fileID: 440680568}
-  tituloDelJuego: {fileID: 1436177171}
-  nombreDelCreador: {fileID: 1442617303}
-  tipoDeCurvaDelTituloDelJuego: 17
-  tipoDeCurvaDelNombreDelCreador: 26
-  tipoDeCurvaDelBoton: 14
-  velocidadDeAnimacion: 1
 --- !u!1 &195964616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,7 +1439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 4
+  m_text: -Reno
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1733,7 +1713,7 @@ GameObject:
   - component: {fileID: 263511680}
   - component: {fileID: 263511679}
   m_Layer: 5
-  m_Name: Techo 4
+  m_Name: Decoracion 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1803,7 +1783,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -1910,9 +1890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-Techo 5
-
-'
+  m_text: -Luces
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3004,6 +2982,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1911393584}
+        m_TargetAssemblyTypeName: AimacionAccion, Assembly-CSharp
+        m_MethodName: AnimacionDeLaInterfazDeAccion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &440680571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,7 +3060,7 @@ RectTransform:
   m_GameObject: {fileID: 450886462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1803035442}
@@ -3307,7 +3297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 1
+  m_text: -Ventana
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3469,7 +3459,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -3602,7 +3592,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -3972,7 +3962,7 @@ GameObject:
   - component: {fileID: 606197564}
   - component: {fileID: 606197563}
   m_Layer: 5
-  m_Name: Texto de empezar
+  m_Name: Texto de salir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4355,7 +4345,7 @@ GameObject:
   - component: {fileID: 640046839}
   - component: {fileID: 640046838}
   m_Layer: 5
-  m_Name: Techo 3
+  m_Name: Decoracion 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4425,7 +4415,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -4624,7 +4614,7 @@ GameObject:
   - component: {fileID: 660472294}
   - component: {fileID: 660472293}
   m_Layer: 5
-  m_Name: Techo 1
+  m_Name: Otros 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4694,7 +4684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -5182,7 +5172,7 @@ GameObject:
   - component: {fileID: 772145559}
   - component: {fileID: 772145558}
   m_Layer: 5
-  m_Name: Techo 2
+  m_Name: Otros 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5252,7 +5242,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -5390,7 +5380,7 @@ GameObject:
   - component: {fileID: 791338915}
   - component: {fileID: 791338914}
   m_Layer: 5
-  m_Name: Techo 5
+  m_Name: Otros 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5460,7 +5450,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -5735,7 +5725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 2
+  m_text: -Puerta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6033,7 +6023,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -6171,7 +6161,7 @@ MonoBehaviour:
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 919132149155446097, guid: a8b75211c27ad4341b3cd8521d69a2d5, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6244,7 +6234,7 @@ RectTransform:
   m_GameObject: {fileID: 889673760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1357139722}
@@ -6406,7 +6396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 3
+  m_text: "-Mu\xF1eco de nieve"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6706,7 +6696,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -7002,7 +6992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 3
+  m_text: -Suelo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7552,6 +7542,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144545751}
   m_CullTransparentMesh: 1
+--- !u!1 &1147214356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147214358}
+  - component: {fileID: 1147214357}
+  m_Layer: 0
+  m_Name: Textos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1147214357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147214356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b235c508536d24f80b73501ea4db9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tituloDelJuego: {fileID: 1436177171}
+  nombreDelCreador: {fileID: 1442617303}
+  botonEmpezar: {fileID: 2066757275}
+  botonDeReanudar: {fileID: 127638282}
+  textoPausa: {fileID: 625856865}
+  botonSalir: {fileID: 606197563}
+--- !u!4 &1147214358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147214356}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 670.0756, y: 401.7316, z: 3.6350403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159710216
 GameObject:
   m_ObjectHideFlags: 0
@@ -7565,7 +7605,7 @@ GameObject:
   - component: {fileID: 1159710219}
   - component: {fileID: 1159710218}
   m_Layer: 5
-  m_Name: Techo 3
+  m_Name: Otros 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7635,7 +7675,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -7819,7 +7859,7 @@ RectTransform:
   m_GameObject: {fileID: 1196232120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 647294753}
@@ -8163,7 +8203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 4
+  m_text: -Roca
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8812,7 +8852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 2
+  m_text: -Regalo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9448,7 +9488,7 @@ GameObject:
   - component: {fileID: 1503222141}
   - component: {fileID: 1503222140}
   m_Layer: 5
-  m_Name: Techo 5
+  m_Name: Decoracion 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9518,7 +9558,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -10057,7 +10097,7 @@ RectTransform:
   m_GameObject: {fileID: 1544500993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1517318052}
@@ -10325,7 +10365,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -10388,7 +10428,7 @@ GameObject:
   - component: {fileID: 1666183883}
   - component: {fileID: 1666183882}
   m_Layer: 5
-  m_Name: Techo 4
+  m_Name: Otros 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10458,7 +10498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -10626,7 +10666,7 @@ GameObject:
   - component: {fileID: 1690463768}
   - component: {fileID: 1690463767}
   m_Layer: 5
-  m_Name: Techo 1
+  m_Name: Decoracion 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10696,7 +10736,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -10936,9 +10976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-Techo 5
-
-'
+  m_text: -Nieve
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11423,7 +11461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Techo 1
+  m_text: -Dulce
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11585,7 +11623,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -11667,6 +11705,77 @@ Transform:
   - {fileID: 1949476095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1911393581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911393583}
+  - component: {fileID: 1911393582}
+  - component: {fileID: 1911393584}
+  m_Layer: 0
+  m_Name: Animaciones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1911393582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911393581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044a16b94bdae44459d0d0adf606f44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonEmpezar: {fileID: 440680568}
+  tituloDelJuego: {fileID: 1436177171}
+  nombreDelCreador: {fileID: 1442617303}
+  tipoDeCurvaDelTituloDelJuego: 19
+  tipoDeCurvaDelNombreDelCreador: 23
+  tipoDeCurvaDelBoton: 26
+  velocidadDeAnimacion: 1
+--- !u!4 &1911393583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911393581}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 691.1418, y: 306.34064, z: 1.8913764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911393584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911393581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace37b4622ba0f944ad956d6e9d00f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonMover: {fileID: 1544500993}
+  botonRotar: {fileID: 889673760}
+  botonPausar: {fileID: 1196232120}
+  botonCrear: {fileID: 2049936086}
+  botonEliminar: {fileID: 450886462}
+  tipoDeCurvaDelBoton: 18
+  velocidadDeAnimacion: 1
 --- !u!1 &1949476091
 GameObject:
   m_ObjectHideFlags: 0
@@ -11855,7 +11964,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -11918,7 +12027,7 @@ GameObject:
   - component: {fileID: 2037702988}
   - component: {fileID: 2037702987}
   m_Layer: 5
-  m_Name: Techo 2
+  m_Name: Decoracion 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11988,7 +12097,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1531216045}
         m_TargetAssemblyTypeName: CreadorDeObjetos, Assembly-CSharp
         m_MethodName: SeleccionarPrefab
         m_Mode: 2
@@ -12202,7 +12311,7 @@ RectTransform:
   m_GameObject: {fileID: 2049936086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1213528459}
@@ -12778,3 +12887,5 @@ SceneRoots:
   - {fileID: 798114900}
   - {fileID: 1231148422}
   - {fileID: 1107626668}
+  - {fileID: 1911393583}
+  - {fileID: 1147214358}
