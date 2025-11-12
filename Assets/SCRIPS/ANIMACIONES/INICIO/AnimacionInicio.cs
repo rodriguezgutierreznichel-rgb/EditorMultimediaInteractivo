@@ -27,9 +27,7 @@ public class AnimacionInicio : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        LeanTween.scale(tituloDelJuego.rectTransform, new Vector3(3f,3f,1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelTituloDelJuego);
-        LeanTween.scale(nombreDelCreador.rectTransform, new Vector3(1.5f, 1.5f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelNombreDelCreador);
-        LeanTween.scale(botonEmpezar, new Vector3(2f, 2f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
+        AnimationInicio();
     }
 
     // Update is called once per frame
@@ -37,4 +35,18 @@ public class AnimacionInicio : MonoBehaviour
     {
         
     }
+    public void AnimationInicio()
+    {
+        LeanTween.scale(tituloDelJuego.rectTransform, new Vector3(3f, 3f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelTituloDelJuego);
+        LeanTween.scale(nombreDelCreador.rectTransform, new Vector3(1.5f, 1.5f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelNombreDelCreador);
+        LeanTween.scale(botonEmpezar, new Vector3(2f, 2f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
+    }
+
+    public void VolverAlEstadoInicial()
+    {
+        LeanTween.scale(tituloDelJuego.rectTransform, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelTituloDelJuego);
+        LeanTween.scale(nombreDelCreador.rectTransform, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelNombreDelCreador);
+        LeanTween.scale(botonEmpezar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
+    }
 }
+

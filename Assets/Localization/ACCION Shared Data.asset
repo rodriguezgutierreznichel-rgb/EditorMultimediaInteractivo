@@ -10,31 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: TEXTOS DE INTERFAZES Shared Data
+  m_Name: ACCION Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: TEXTOS DE INTERFAZES
-  m_TableCollectionNameGuidString: 844de420d406f67458b2b96d95762e56
+  m_TableCollectionName: ACCION
+  m_TableCollectionNameGuidString: 4dfbd56349e344d4983f02c97b33c6ec
   m_Entries:
-  - m_Id: 26591289344
-    m_Key: -PROYECT GAME
+  - m_Id: 37379039232
+    m_Key: -Mover
     m_Metadata:
       m_Items: []
-  - m_Id: 29913178112
-    m_Key: -Creado por Nichel Hacomar Rodriguez Gutierrez
+  - m_Id: 39727849472
+    m_Key: -Rotar
     m_Metadata:
       m_Items: []
-  - m_Id: 3804270878720
-    m_Key: -EMPEZAR
+  - m_Id: 42277986304
+    m_Key: -Pausar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45264330752
+    m_Key: -Crear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49995505664
+    m_Key: -Eliminar
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 1198521793438810376
+    rid: 1198521834162094147
   references:
     version: 2
     RefIds:
-    - rid: 1198521793438810376
+    - rid: 1198521834162094147
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1762799692564
+        m_CustomEpoch: 1762956214878

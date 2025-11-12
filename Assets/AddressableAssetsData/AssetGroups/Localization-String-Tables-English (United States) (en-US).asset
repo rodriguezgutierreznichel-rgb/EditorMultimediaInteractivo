@@ -15,6 +15,18 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (United States) (en-US)
   m_GUID: 6c455fd483337994085e0ead08f97b98
   m_SerializeEntries:
+  - m_GUID: 1652fd5340a4663478701d14ec6855fc
+    m_Address: ACCION_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b92d04d6f64a7124ca0d23a9787af9b0
+    m_Address: INTERFAZ DE PAUSA_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e9f089e42cbcb434391c81de316990d7
     m_Address: TEXTOS DE INTERFAZES_en-US
     m_ReadOnly: 1

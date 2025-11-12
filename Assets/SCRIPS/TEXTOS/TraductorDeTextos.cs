@@ -7,6 +7,8 @@ public class TraductorDeTextos : MonoBehaviour
 
     public TextMeshProUGUI botonDeReanudar, textoPausa, botonSalir;
 
+    public TextMeshProUGUI botonMover, botonRotar, botonPausa, botonCrear, botonEliminar;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,8 +24,16 @@ public class TraductorDeTextos : MonoBehaviour
         botonEmpezar.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-EMPEZAR");
         nombreDelCreador.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-Creado por Nichel Hacomar Rodriguez Gutierrez");
 
-        botonDeReanudar.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-REANUDAR");
-        botonSalir.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-SALIR");
-        textoPausa.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-PAUSAR");
+        botonDeReanudar.text = LocalizationSettings.StringDatabase.GetLocalizedString("INTERFAZ DE PAUSA", "-REANUDAR");
+        botonSalir.text = LocalizationSettings.StringDatabase.GetLocalizedString("INTERFAZ DE PAUSA", "-SALIR");
+        textoPausa.text = LocalizationSettings.StringDatabase.GetLocalizedString("INTERFAZ DE PAUSA", "-PAUSAR");
+
+        botonMover.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Mover");
+        botonRotar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Rotar");
+        botonPausa.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Pausar");
+        botonCrear.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Crear");
+        botonEliminar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Eliminar");
+
+
     }
 }

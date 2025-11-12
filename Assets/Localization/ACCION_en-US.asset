@@ -10,24 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: TEXTOS DE INTERFAZES_en-US
+  m_Name: ACCION_en-US
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en-US
-  m_SharedData: {fileID: 11400000, guid: 844de420d406f67458b2b96d95762e56, type: 2}
+  m_SharedData: {fileID: 11400000, guid: 4dfbd56349e344d4983f02c97b33c6ec, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 26591289344
-    m_Localized: PROYECT GAME
+  - m_Id: 37379039232
+    m_Localized: MOVE
     m_Metadata:
       m_Items: []
-  - m_Id: 29913178112
-    m_Localized: Created by Nichel Hacomar Rodriguez Gutierrez
+  - m_Id: 39727849472
+    m_Localized: ROTATE
     m_Metadata:
       m_Items: []
-  - m_Id: 3804270878720
-    m_Localized: START
+  - m_Id: 42277986304
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45264330752
+    m_Localized: CREATE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49995505664
+    m_Localized: ELIMINATE
     m_Metadata:
       m_Items: []
   references:

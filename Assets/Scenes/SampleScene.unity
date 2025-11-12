@@ -2983,8 +2983,20 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1911393584}
+        m_TargetAssemblyTypeName: AnimacionInicio, Assembly-CSharp
+        m_MethodName: VolverAlEstadoInicial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1911393585}
         m_TargetAssemblyTypeName: AimacionAccion, Assembly-CSharp
-        m_MethodName: AnimacionDeLaInterfazDeAccion
+        m_MethodName: AnimacionAccion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4974,6 +4986,30 @@ MonoBehaviour:
       - m_Target: {fileID: 162442811}
         m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
         m_MethodName: SalirDelJuego
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1911393584}
+        m_TargetAssemblyTypeName: AnimacionInicio, Assembly-CSharp
+        m_MethodName: AnimationInicio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1911393585}
+        m_TargetAssemblyTypeName: AimacionAccion, Assembly-CSharp
+        m_MethodName: VolverAlEstadoInicial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7577,6 +7613,11 @@ MonoBehaviour:
   botonDeReanudar: {fileID: 127638282}
   textoPausa: {fileID: 625856865}
   botonSalir: {fileID: 606197563}
+  botonMover: {fileID: 1517318053}
+  botonRotar: {fileID: 1357139723}
+  botonPausa: {fileID: 647294754}
+  botonCrear: {fileID: 1213528460}
+  botonEliminar: {fileID: 1803035443}
 --- !u!4 &1147214358
 Transform:
   m_ObjectHideFlags: 0
@@ -8368,6 +8409,18 @@ MonoBehaviour:
       - m_Target: {fileID: 162442811}
         m_TargetAssemblyTypeName: UIStateMachine, Assembly-CSharp
         m_MethodName: ReanudarJuego
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1911393585}
+        m_TargetAssemblyTypeName: AimacionAccion, Assembly-CSharp
+        m_MethodName: AnimacionAccion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11714,8 +11767,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1911393583}
-  - component: {fileID: 1911393582}
   - component: {fileID: 1911393584}
+  - component: {fileID: 1911393585}
   m_Layer: 0
   m_Name: Animaciones
   m_TagString: Untagged
@@ -11723,25 +11776,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1911393582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911393581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044a16b94bdae44459d0d0adf606f44c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  botonEmpezar: {fileID: 440680568}
-  tituloDelJuego: {fileID: 1436177171}
-  nombreDelCreador: {fileID: 1442617303}
-  tipoDeCurvaDelTituloDelJuego: 19
-  tipoDeCurvaDelNombreDelCreador: 23
-  tipoDeCurvaDelBoton: 26
-  velocidadDeAnimacion: 1
 --- !u!4 &1911393583
 Transform:
   m_ObjectHideFlags: 0
@@ -11766,6 +11800,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1911393581}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044a16b94bdae44459d0d0adf606f44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonEmpezar: {fileID: 440680568}
+  tituloDelJuego: {fileID: 1436177171}
+  nombreDelCreador: {fileID: 1442617303}
+  tipoDeCurvaDelTituloDelJuego: 24
+  tipoDeCurvaDelNombreDelCreador: 24
+  tipoDeCurvaDelBoton: 24
+  velocidadDeAnimacion: 1
+--- !u!114 &1911393585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911393581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ace37b4622ba0f944ad956d6e9d00f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -11774,7 +11827,7 @@ MonoBehaviour:
   botonPausar: {fileID: 1196232120}
   botonCrear: {fileID: 2049936086}
   botonEliminar: {fileID: 450886462}
-  tipoDeCurvaDelBoton: 18
+  tipoDeCurvaDelBoton: 24
   velocidadDeAnimacion: 1
 --- !u!1 &1949476091
 GameObject:

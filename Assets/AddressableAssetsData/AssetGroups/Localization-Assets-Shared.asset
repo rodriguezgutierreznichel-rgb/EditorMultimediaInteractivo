@@ -15,6 +15,16 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: ad5b9d0c372ed1c4ebb6d028c3314bd4
   m_SerializeEntries:
+  - m_GUID: 16357bb7a1d47014994de6e9ffc86a6a
+    m_Address: Assets/Localization/INTERFAZ DE PAUSA Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4dfbd56349e344d4983f02c97b33c6ec
+    m_Address: Assets/Localization/ACCION Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 844de420d406f67458b2b96d95762e56
     m_Address: Assets/Localization/TEXTOS DE INTERFAZES Shared Data.asset
     m_ReadOnly: 1

@@ -30,18 +30,6 @@ MonoBehaviour:
     m_Localized: EMPEZAR
     m_Metadata:
       m_Items: []
-  - m_Id: 5342334738432
-    m_Localized: REANUDAR
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5349385363456
-    m_Localized: SALIR
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5344729686016
-    m_Localized: PAUSAR
-    m_Metadata:
-      m_Items: []
   references:
     version: 2
     RefIds: []
