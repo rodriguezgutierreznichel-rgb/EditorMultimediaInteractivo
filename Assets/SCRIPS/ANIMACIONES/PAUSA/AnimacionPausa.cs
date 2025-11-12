@@ -3,13 +3,22 @@ using UnityEngine;
 
 public class AnimacionPausa : MonoBehaviour
 {
-    public GameObject botonPausa;
+    public GameObject botonReanudar, botonSalir;
+    public TextMeshProUGUI textoPausa;
 
     [SerializeField]
-    LeanTweenType tipoDeCurvaDelBoton;
+    LeanTweenType tipoDeCurvaDelBotonReanudar;
+
+    [SerializeField]
+    LeanTweenType tipoDeCurvaDelTextoPausa;
+
+    [SerializeField]
+    LeanTweenType tipoDeCurvaDelBotonSalir;
 
     [SerializeField]
     public float velocidadDeAnimacion = 0f;
+
+
 
 
 
@@ -26,6 +35,14 @@ public class AnimacionPausa : MonoBehaviour
     }
     public void AnimacionDeLaInterfazDePausa()
     {
-        LeanTween.scale(botonPausa, new Vector3(2f, 2f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
+        LeanTween.scale(textoPausa.rectTransform, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelTextoPausa);
+        LeanTween.scale(botonSalir, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBotonSalir);
+        LeanTween.scale(botonReanudar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBotonReanudar);
+    }
+    public void VolverAlEstadoInicial()
+    {
+        LeanTween.scale(textoPausa.rectTransform, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelTextoPausa);
+        LeanTween.scale(botonSalir, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBotonSalir);
+        LeanTween.scale(botonReanudar, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBotonReanudar);
     }
 }

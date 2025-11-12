@@ -9,7 +9,7 @@ public class TraductorDeTextos : MonoBehaviour
 
     public TextMeshProUGUI botonMover, botonRotar, botonPausa, botonCrear, botonEliminar;
 
-
+    public TextMeshProUGUI texoAdvertencia, botonCancelar, botonSalir2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +34,8 @@ public class TraductorDeTextos : MonoBehaviour
         botonCrear.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Crear");
         botonEliminar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Eliminar");
 
-
+        texoAdvertencia.text = LocalizationSettings.StringDatabase.GetLocalizedString("ADVERTENCIA", "-CUIDADO, LA PARTIDA NO SE GUARDA");
+        botonCancelar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ADVERTENCIA", "-CANCELAR");
+        botonSalir2.text = LocalizationSettings.StringDatabase.GetLocalizedString("ADVERTENCIA", "-SALIR");
     }
 }
