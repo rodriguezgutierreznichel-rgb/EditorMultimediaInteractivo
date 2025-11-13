@@ -1,10 +1,15 @@
+using TMPro;
 using UnityEngine;
 
 public class EstadoPausa : IEstado
 {
+  
+
     public void Entrar(UIStateMachine cerebro)
     {
-       cerebro.panelPausa.SetActive(true);
+       
+
+        cerebro.panelPausa.SetActive(true);
         Time.timeScale = 0f;
     }
 
