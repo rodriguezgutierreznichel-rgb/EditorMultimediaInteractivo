@@ -1,8 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class EliminarObjeto : MonoBehaviour
 {
     bool modoEliminar = false; //Indica si el modo esta activo o no, al inicio debe estar desactivado.
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,12 +33,14 @@ public class EliminarObjeto : MonoBehaviour
                 {
                     return; // Salimos del Update.
                 }
-
+                
+                
                 Destroy(obj); // Destruye el objeto.
-
+                    
                 Debug.Log("Objeto eliminado: " + obj.name); //Añade un texto a la console diciendo que objeto elimino.
 
                 modoEliminar = false; // desactiva modo tras eliminar 1 objeto
+            
             }
         }
 

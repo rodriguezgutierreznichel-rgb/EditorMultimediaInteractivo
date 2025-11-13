@@ -5,7 +5,8 @@ public class CreadorDeObjetos : MonoBehaviour
     GameObject currentGameObject = null;
     GameObject prefabSeleccionado;
     float rotacionY = 0f;
-
+    [SerializeField]
+    GameObject efecto;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,6 +47,7 @@ public class CreadorDeObjetos : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100f))
         {
             currentGameObject.transform.position = hit.point + Vector3.up;
+            
         }
 
         currentGameObject.SetActive(true);
@@ -53,10 +55,18 @@ public class CreadorDeObjetos : MonoBehaviour
 
     void ColocarObjeto()
     {
-        if (currentGameObject != null && Input.GetMouseButtonDown(0))
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100f))
         {
-            // Suelta el objeto y permite crear otro m�s tarde
-            currentGameObject = null;
+
+            if (currentGameObject != null && Input.GetMouseButtonDown(0))
+            {
+                // Suelta el objeto y permite crear otro m�s tarde
+                currentGameObject = null;
+                Instantiate(efecto, hit.point, Quaternion.identity);
+            }
         }
     }
     void RotarObjeto()
