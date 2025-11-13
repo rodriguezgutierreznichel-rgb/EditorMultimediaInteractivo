@@ -10,10 +10,21 @@ public class AimacionAccion : MonoBehaviour
     [SerializeField]
     public float velocidadDeAnimacion = 0f;
 
+    private Vector3 escalaOriginalMover;
+    private Vector3 escalaOriginalRotar;
+    private Vector3 escalaOriginalPausar;
+    private Vector3 escalaOriginalCrear;
+    private Vector3 escalaOriginalEliminar;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        escalaOriginalMover = botonMover.transform.localScale;
+        escalaOriginalRotar = botonRotar.transform.localScale;
+        escalaOriginalPausar = botonPausar.transform.localScale;
+        escalaOriginalCrear = botonCrear.transform.localScale;
+        escalaOriginalEliminar = botonEliminar.transform.localScale;
+    
     }
 
     // Update is called once per frame
@@ -23,6 +34,12 @@ public class AimacionAccion : MonoBehaviour
     }
     public void AnimacionAccion()
     {
+        botonMover.transform.localScale = escalaOriginalMover;
+        botonRotar.transform.localScale = escalaOriginalRotar;
+        botonPausar.transform.localScale = escalaOriginalPausar;
+        botonCrear.transform.localScale = escalaOriginalCrear;
+        botonEliminar.transform.localScale = escalaOriginalEliminar;
+
         LeanTween.scale(botonMover, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
         LeanTween.scale(botonRotar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
         LeanTween.scale(botonPausar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
@@ -30,12 +47,8 @@ public class AimacionAccion : MonoBehaviour
         LeanTween.scale(botonEliminar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
     }
 
-    public void VolverAlEstadoInicial()
+    public void ReiniciarAnimacion()
     {
-        LeanTween.scale(botonMover, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
-        LeanTween.scale(botonRotar, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
-        LeanTween.scale(botonPausar, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
-        LeanTween.scale(botonCrear, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
-        LeanTween.scale(botonEliminar, new Vector3(0.5f, 0.5f, 0.5f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
+        AnimacionAccion();
     }
 }
