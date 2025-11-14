@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AimacionAccion : MonoBehaviour
 {
-    public GameObject botonMover, botonRotar, botonPausar, botonCrear, botonEliminar;
+    public GameObject botonMover, botonRotar, botonCrear, botonEliminar;
 
     [SerializeField]
     LeanTweenType tipoDeCurvaDelBoton;
@@ -12,7 +12,7 @@ public class AimacionAccion : MonoBehaviour
 
     private Vector3 escalaOriginalMover;
     private Vector3 escalaOriginalRotar;
-    private Vector3 escalaOriginalPausar;
+   
     private Vector3 escalaOriginalCrear;
     private Vector3 escalaOriginalEliminar;
 
@@ -21,7 +21,7 @@ public class AimacionAccion : MonoBehaviour
     {
         escalaOriginalMover = botonMover.transform.localScale;
         escalaOriginalRotar = botonRotar.transform.localScale;
-        escalaOriginalPausar = botonPausar.transform.localScale;
+       
         escalaOriginalCrear = botonCrear.transform.localScale;
         escalaOriginalEliminar = botonEliminar.transform.localScale;
     
@@ -36,13 +36,13 @@ public class AimacionAccion : MonoBehaviour
     {
         botonMover.transform.localScale = escalaOriginalMover;
         botonRotar.transform.localScale = escalaOriginalRotar;
-        botonPausar.transform.localScale = escalaOriginalPausar;
+        
         botonCrear.transform.localScale = escalaOriginalCrear;
         botonEliminar.transform.localScale = escalaOriginalEliminar;
 
         LeanTween.scale(botonMover, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
         LeanTween.scale(botonRotar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
-        LeanTween.scale(botonPausar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
+        
         LeanTween.scale(botonCrear, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
         LeanTween.scale(botonEliminar, new Vector3(1f, 1f, 1f), velocidadDeAnimacion).setEase(tipoDeCurvaDelBoton);
     }

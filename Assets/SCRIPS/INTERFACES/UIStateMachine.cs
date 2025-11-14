@@ -4,7 +4,7 @@ public class UIStateMachine : MonoBehaviour
 {
     private IEstado estadoActual;
 
-    public GameObject panelInicio, panelPausa, panelAdvertencia, panelAccion, panelObjetos;
+    public GameObject panelInicio, panelAccion, panelObjetos;
 
    
 
@@ -36,30 +36,10 @@ public class UIStateMachine : MonoBehaviour
     {
         CambiarEstado(new EstadoJuego());
     }
-    public void PausarJuego()
-    {
-        CambiarEstado(new EstadoPausa());
-        panelAccion.SetActive(false);
-    }
     public void ReanudarJuego()
     {
         CambiarEstado(new EstadoJuego());
         panelAccion.SetActive(true);
-    }
-    public void CancelarSalida()
-    {
-        CambiarEstado(new EstadoPausa());
-        
-    }
-   
-    public void MostrarAdvertencia()
-    {
-        CambiarEstado(new EstadoAdvertencia());
-    }
-    public void SalirDelJuego()
-    {
-        CambiarEstado(new EstadoInicio());
-        panelAccion.SetActive(false);
     }
     public void EntrarAlModoObjeto()
     {

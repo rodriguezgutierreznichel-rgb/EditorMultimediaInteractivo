@@ -5,11 +5,11 @@ public class TraductorDeTextos : MonoBehaviour
 {
     public TextMeshProUGUI tituloDelJuego, nombreDelCreador, botonEmpezar;
 
-    public TextMeshProUGUI botonDeReanudar, textoPausa, botonSalir;
+    
 
-    public TextMeshProUGUI botonMover, botonRotar, botonPausa, botonCrear, botonEliminar;
+    public TextMeshProUGUI botonMover, botonRotar, botonCrear, botonEliminar;
 
-    public TextMeshProUGUI texoAdvertencia, botonCancelar, botonSalir2;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,18 +24,16 @@ public class TraductorDeTextos : MonoBehaviour
         botonEmpezar.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-EMPEZAR");
         nombreDelCreador.text = LocalizationSettings.StringDatabase.GetLocalizedString("TEXTOS DE INTERFAZES", "-Creado por Nichel Hacomar Rodriguez Gutierrez");
 
-        botonDeReanudar.text = LocalizationSettings.StringDatabase.GetLocalizedString("INTERFAZ DE PAUSA", "-REANUDAR");
-        botonSalir.text = LocalizationSettings.StringDatabase.GetLocalizedString("INTERFAZ DE PAUSA", "-SALIR");
-        textoPausa.text = LocalizationSettings.StringDatabase.GetLocalizedString("INTERFAZ DE PAUSA", "-PAUSAR");
+       
+        
+       
 
         botonMover.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Mover");
         botonRotar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Rotar");
-        botonPausa.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Pausar");
+       
         botonCrear.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Crear");
         botonEliminar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ACCION", "-Eliminar");
 
-        texoAdvertencia.text = LocalizationSettings.StringDatabase.GetLocalizedString("ADVERTENCIA", "-CUIDADO, LA PARTIDA NO SE GUARDA");
-        botonCancelar.text = LocalizationSettings.StringDatabase.GetLocalizedString("ADVERTENCIA", "-CANCELAR");
-        botonSalir2.text = LocalizationSettings.StringDatabase.GetLocalizedString("ADVERTENCIA", "-SALIR");
+       
     }
 }
