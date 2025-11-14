@@ -17,6 +17,9 @@ public class BotonAnimation : MonoBehaviour
     [SerializeField]
     Vector3 newPosition = new Vector3 (0f,0f, 0f);
 
+    [SerializeField]
+    Vector3 oldPosition = new Vector3 (0f,0f,0f);
+
     public float timer1 = 0f;
     public float timer2 = 0f;
     public float timer3 = 0f;
@@ -50,12 +53,23 @@ public class BotonAnimation : MonoBehaviour
 
 
 
-            if (timer1 > 1f)
+            if (timer1 > 5f)
             {
 
-                LeanTween.move(botonMensaje1, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
+                LeanTween.move(botonMensaje1, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
 
                 juegoActivo1 = false;
+            }
+        }
+        if (juegoActivo2)
+        {
+            timer2 = timer2 + Time.deltaTime;
+
+            if (timer2 > 5)
+            {
+                LeanTween.move(botonMensaje2, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
+
+                juegoActivo2 = false;
             }
         }
     }
@@ -71,6 +85,19 @@ public class BotonAnimation : MonoBehaviour
         botonMensaje2.SetActive(false);
         botonMensaje3.SetActive(false);
 
-        LeanTween.move(botonMensaje1,newPosition,velocidadDeAnimacion).setEase(curvaInicial);
+        LeanTween.move(botonMensaje1, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
+    }
+    public void SegundaNotificacion()
+    {
+        botonMensaje2.transform.localPosition = positionOriginalBotonMensaje2;
+        timer1 = 0f;
+        juegoActivo2 = true;
+
+        botonMensaje2.SetActive(true);
+        mensajito.SetActive(true);
+        botonMensaje1.SetActive(false);
+        botonMensaje3.SetActive(false);
+
+        LeanTween.move(botonMensaje2, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
     }
 }

@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MensajitoAnimation : MonoBehaviour
 {
-    public GameObject mensajito, imageCrear, imageAccion, imageEliminar;
+    public GameObject botonNotificacion1, botonNotificacion2, botonNotificacion3;
+    public GameObject mensajito, primerMensaje, segundoMensaje, tercerMensaje;
 
     [SerializeField]
     LeanTweenType curvaInicial;
@@ -14,7 +15,13 @@ public class MensajitoAnimation : MonoBehaviour
     Vector3 newPosition = new Vector3 (0f,0f,0f);
 
     [SerializeField]
-    Vector3 newScale = new Vector3(0f, 0f, 0f);
+    Vector3 oldPosition = new Vector3(0f, 0f, 0f);
+
+    [SerializeField]
+    float velocidadDeAnimacion = 0f;
+
+    [SerializeField]
+    float velocidadFinal = 0f;
 
     public float timerPrimer = 0f;
     bool juegoActivoPrimer = false;
@@ -25,28 +32,20 @@ public class MensajitoAnimation : MonoBehaviour
     public float timerTercero = 0f;
     bool juegoActivoTercero = false;
 
-    private Vector3 escalaOriginalCrear;
-    private Vector3 escalaOriginalAccion;
-    private Vector3 escalaOriginalEliminar;
-
-    private Vector3 positionOriginalCrear;
-    private Vector3 positionOriginalAccion;
-    private Vector3 positionOriginalEliminar;
+    private Vector3 positionOriginalPrimerMensaje;
+    private Vector3 positionOriginalSegundoMensaje;
+    private Vector3 positionOriginalTercerMensaje;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         mensajito.SetActive(false);
-        imageCrear.SetActive(false);
-        imageAccion.SetActive(false);
-        imageEliminar.SetActive(false);
+        primerMensaje.SetActive(false);
+        segundoMensaje.SetActive(false);
+        tercerMensaje.SetActive(false);
 
-        escalaOriginalCrear = imageCrear.transform.localScale;
-        escalaOriginalAccion = imageAccion.transform.localScale;
-        escalaOriginalEliminar = imageEliminar.transform.localScale;
-
-        positionOriginalCrear = imageCrear.transform.localPosition;
-        positionOriginalAccion = imageAccion.transform.localPosition;
-        positionOriginalEliminar = imageEliminar.transform.localPosition;
+        positionOriginalPrimerMensaje = primerMensaje.transform.localPosition;
+        positionOriginalSegundoMensaje = segundoMensaje.transform.localPosition;
+        positionOriginalTercerMensaje = tercerMensaje.transform.localPosition;
     }
 
     // Update is called once per frame
@@ -54,90 +53,62 @@ public class MensajitoAnimation : MonoBehaviour
     {
         if (juegoActivoPrimer)
         {
-            timerPrimer += Time.deltaTime; 
-           
+            timerPrimer = timerPrimer + Time.deltaTime;
 
-           
-            if (timerPrimer > 5f)
+            if (timerPrimer > 5)
             {
-                
-                LeanTween.scale(imageCrear, newScale, 1f).setEase(curvaFinal);
-                
-                juegoActivoPrimer = false; 
+                LeanTween.move(primerMensaje, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
             }
+
         }
         if (juegoActivoSegundo)
         {
-            timerSegundo += Time.deltaTime;
+            timerSegundo = timerSegundo + Time.deltaTime;
 
-
-
-            if (timerSegundo > 5f)
+            if (timerSegundo > 5)
             {
-
-                LeanTween.scale(imageAccion, newScale, 1f).setEase(curvaFinal);
-
-                juegoActivoSegundo = false;
-            }
-        }
-        if (juegoActivoTercero)
-        {
-            timerTercero += Time.deltaTime;
-
-
-
-            if (timerTercero > 5f)
-            {
-
-                LeanTween.scale(imageEliminar, newScale, 1f).setEase(curvaFinal);
-
-                juegoActivoTercero = false;
+                LeanTween.move(segundoMensaje, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
             }
         }
     }
     public void PrimerMensaje()
     {
-        imageCrear.transform.localScale = escalaOriginalCrear;
-        imageCrear.transform.localPosition = positionOriginalCrear;
         timerPrimer = 0f;
         juegoActivoPrimer = true;
 
+        primerMensaje.transform.localPosition = positionOriginalPrimerMensaje;
+
         mensajito.SetActive(true);
-        imageCrear.SetActive(true);
-        imageAccion.SetActive(false);
-        imageEliminar.SetActive(false);
-       
-        LeanTween.moveY(imageCrear, newPosition.y, 1f).setEase(curvaInicial);
+        primerMensaje.SetActive(true);
+
+        segundoMensaje.SetActive(false);
+        tercerMensaje .SetActive(false);
+
+        LeanTween.scale(botonNotificacion1, new Vector3 (0f,0f,0f), velocidadFinal);
+        
+            Debug.Log("Cambio de posicion");
+            LeanTween.move(primerMensaje, newPosition, velocidadDeAnimacion).setEase(curvaInicial);
+        
+
     }
-    public void SengundoMensaje()
+    public void SegundoMensaje()
     {
-        imageAccion.transform.localScale = escalaOriginalAccion;
-        imageAccion.transform.localPosition = positionOriginalAccion;
         timerSegundo = 0f;
         juegoActivoSegundo = true;
 
-        mensajito.SetActive(true);
-        imageAccion.SetActive(true);
-        imageCrear.SetActive(false);
-        imageEliminar.SetActive(false);
-
-        LeanTween.moveY(imageAccion, newPosition.y, 1f).setEase(curvaInicial);
-    }
-    public void TercerMensaje()
-    {
-        imageEliminar.transform.localScale = escalaOriginalEliminar;
-        imageEliminar.transform.localPosition = positionOriginalEliminar;
-        timerTercero = 0f;
-        juegoActivoTercero = true;
+        segundoMensaje.transform.localPosition = positionOriginalSegundoMensaje;
 
         mensajito.SetActive(true);
-        imageEliminar.SetActive(true);
-        imageCrear.SetActive(false);
-        imageAccion.SetActive(false);
+        segundoMensaje.SetActive(true);
 
-        LeanTween.moveY(imageEliminar, newPosition.y, 1f).setEase(curvaInicial);
+        primerMensaje.SetActive(false);
+        tercerMensaje.SetActive(false);
+
+        LeanTween.scale(botonNotificacion2, new Vector3(0f, 0f, 0f), velocidadFinal);
+
+        Debug.Log("Cambio de posicion");
+        LeanTween.move(segundoMensaje, newPosition, velocidadDeAnimacion).setEase(curvaInicial);
+
     }
-
-
 }
 
