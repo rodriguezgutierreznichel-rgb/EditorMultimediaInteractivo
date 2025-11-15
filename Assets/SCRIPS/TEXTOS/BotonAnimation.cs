@@ -4,6 +4,7 @@ using UnityEngine;
 public class BotonAnimation : MonoBehaviour
 {
     public GameObject mensajito, botonMensaje1, botonMensaje2, botonMensaje3;
+    
 
     [SerializeField]
     LeanTweenType curvaInicial;
@@ -51,7 +52,7 @@ public class BotonAnimation : MonoBehaviour
         {
             timer1 += Time.deltaTime;
 
-
+           
 
             if (timer1 > 5f)
             {
@@ -72,10 +73,24 @@ public class BotonAnimation : MonoBehaviour
                 juegoActivo2 = false;
             }
         }
+        if (juegoActivo3)
+        {
+            timer3 = timer3 + Time.deltaTime;
+
+            if (timer3 > 5)
+            {
+                LeanTween.move(botonMensaje3, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
+
+                juegoActivo3 = false;
+
+            }
+        }
     }
 
     public void PrimeraNotificacion()
     {
+        
+
         botonMensaje1.transform.localPosition = positionOriginalBotonMensaje1;
         timer1 = 0f;
         juegoActivo1 = true;
@@ -99,5 +114,22 @@ public class BotonAnimation : MonoBehaviour
         botonMensaje3.SetActive(false);
 
         LeanTween.move(botonMensaje2, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
+    }
+    public void QuitarBoton2()
+    {
+        botonMensaje2.SetActive(false);
+    }
+    public void TerceraNotificacion()
+    {
+        botonMensaje3.transform.localPosition = positionOriginalBotonMensaje3;
+        timer3 = 0f;
+        juegoActivo3 = true;
+
+        botonMensaje3.SetActive(true);
+        mensajito.SetActive(true);
+        botonMensaje1.SetActive(false);
+        botonMensaje2.SetActive(false);
+
+        LeanTween.move(botonMensaje3, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
     }
 }

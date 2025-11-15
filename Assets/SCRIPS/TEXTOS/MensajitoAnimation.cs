@@ -86,7 +86,7 @@ public class MensajitoAnimation : MonoBehaviour
 
         LeanTween.scale(botonNotificacion1, new Vector3 (0f,0f,0f), velocidadFinal);
         
-            Debug.Log("Cambio de posicion");
+           
             LeanTween.move(primerMensaje, newPosition, velocidadDeAnimacion).setEase(curvaInicial);
         
 
@@ -106,9 +106,27 @@ public class MensajitoAnimation : MonoBehaviour
 
         LeanTween.scale(botonNotificacion2, new Vector3(0f, 0f, 0f), velocidadFinal);
 
-        Debug.Log("Cambio de posicion");
+       
         LeanTween.move(segundoMensaje, newPosition, velocidadDeAnimacion).setEase(curvaInicial);
 
+    }
+    public void TercerMensaje()
+    {
+        timerTercero = 0f;
+        juegoActivoTercero = true;
+
+        tercerMensaje.transform.localPosition = positionOriginalTercerMensaje;
+
+        mensajito.SetActive(true);
+        tercerMensaje.SetActive(true);
+
+        primerMensaje.SetActive(false);
+        segundoMensaje.SetActive(false);
+
+        LeanTween.scale(botonNotificacion3, new Vector3(0f, 0f, 0f), velocidadFinal);
+
+        Debug.Log("Cambio de posicion");
+        LeanTween.move(tercerMensaje, newPosition, velocidadDeAnimacion).setEase(curvaInicial);
     }
 }
 
