@@ -6,11 +6,15 @@ public class UIStateMachine : MonoBehaviour
 
     public GameObject panelInicio, panelAccion, panelObjetos;
 
-   
+    public AudioClip sonidoClick;
+    private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
         CambiarEstado(new EstadoInicio());
     }
 
@@ -35,6 +39,7 @@ public class UIStateMachine : MonoBehaviour
     public void IniciarJuego()
     {
         CambiarEstado(new EstadoJuego());
+        audioSource.PlayOneShot(sonidoClick);
     }
     public void ReanudarJuego()
     {
@@ -44,6 +49,7 @@ public class UIStateMachine : MonoBehaviour
     public void EntrarAlModoObjeto()
     {
         CambiarEstado(new EstadoObjetos());
+        audioSource.PlayOneShot(sonidoClick);
     }
     public void OcultarMenuDeAccion()
     {

@@ -4,12 +4,15 @@ using UnityEngine;
 public class EliminarObjeto : MonoBehaviour
 {
     bool modoEliminar = false; //Indica si el modo esta activo o no, al inicio debe estar desactivado.
-    
+
+    public AudioClip sonidoClick;
+    private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
     }
 
     // Update is called once per frame
@@ -53,6 +56,8 @@ public class EliminarObjeto : MonoBehaviour
     }
     public void ActivarModoEliminar() // Funcion para el boton.
     {
+        audioSource.PlayOneShot(sonidoClick);
+
         modoEliminar = true; // Activamos el modo.
 
         Debug.Log("Modo eliminar activado"); // Se añade otro texto diciendo que se entro al modo.

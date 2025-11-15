@@ -6,10 +6,14 @@ public class RotarObjetos : MonoBehaviour
 
     GameObject objetoSeleccionado = null; // Es el objeto que vamos a rotar, inicialmente es nulo.
 
+    public AudioClip sonidoClick;
+    private AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
     }
 
     // Update is called once per frame
@@ -62,6 +66,8 @@ public class RotarObjetos : MonoBehaviour
     }
     public void ActivarModoRotar() // Funcion para el boton.
     {
+        audioSource.PlayOneShot(sonidoClick);
+
         modoRotar = true; // Activamos el modo.
 
         Debug.Log("Modo rotar activado"); // Se añade otro texto diciendo que se entro al modo.

@@ -8,10 +8,15 @@ public class CreadorDeObjetos : MonoBehaviour
     [SerializeField]
     GameObject efecto;
 
+    public AudioClip sonidoExplosion;
+   
+    private AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
     }
 
     // Update is called once per frame
@@ -66,6 +71,7 @@ public class CreadorDeObjetos : MonoBehaviour
                 // Suelta el objeto y permite crear otro m�s tarde
                 currentGameObject = null;
                 Instantiate(efecto, hit.point, Quaternion.identity);
+                audioSource.PlayOneShot(sonidoExplosion);
             }
         }
     }

@@ -5,10 +5,15 @@ public class MoverObjetos : MonoBehaviour
     bool modoMover = false;
     GameObject objetoSeleccionado = null;
 
+    public AudioClip sonidoClick;
+    private AudioSource audioSource;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -70,6 +75,8 @@ public class MoverObjetos : MonoBehaviour
     // Función pública para botón
     public void ActivarModoMover()
     {
+        audioSource.PlayOneShot(sonidoClick);
+
         modoMover = true;
         objetoSeleccionado = null;
         Debug.Log("Modo mover activado: selecciona un objeto, mueve con ratón y ajusta altura con rueda, clic derecho para cancelar");

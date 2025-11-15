@@ -4,7 +4,9 @@ using UnityEngine;
 public class BotonAnimation : MonoBehaviour
 {
     public GameObject mensajito, botonMensaje1, botonMensaje2, botonMensaje3;
-    
+
+    public AudioClip sonidoNotificacion;
+    private AudioSource audioSource;
 
     [SerializeField]
     LeanTweenType curvaInicial;
@@ -43,6 +45,9 @@ public class BotonAnimation : MonoBehaviour
         positionOriginalBotonMensaje1 = botonMensaje1.transform.localPosition;
         positionOriginalBotonMensaje2 = botonMensaje2.transform.localPosition;
         positionOriginalBotonMensaje3 = botonMensaje3.transform.localPosition;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
     }
 
     // Update is called once per frame
@@ -91,6 +96,8 @@ public class BotonAnimation : MonoBehaviour
     {
         
 
+
+
         botonMensaje1.transform.localPosition = positionOriginalBotonMensaje1;
         timer1 = 0f;
         juegoActivo1 = true;
@@ -101,6 +108,8 @@ public class BotonAnimation : MonoBehaviour
         botonMensaje3.SetActive(false);
 
         LeanTween.move(botonMensaje1, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
+        audioSource.PlayOneShot(sonidoNotificacion);
+        
     }
     public void SegundaNotificacion()
     {
@@ -114,11 +123,9 @@ public class BotonAnimation : MonoBehaviour
         botonMensaje3.SetActive(false);
 
         LeanTween.move(botonMensaje2, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
+        audioSource.PlayOneShot(sonidoNotificacion);
     }
-    public void QuitarBoton2()
-    {
-        botonMensaje2.SetActive(false);
-    }
+    
     public void TerceraNotificacion()
     {
         botonMensaje3.transform.localPosition = positionOriginalBotonMensaje3;
@@ -131,5 +138,6 @@ public class BotonAnimation : MonoBehaviour
         botonMensaje2.SetActive(false);
 
         LeanTween.move(botonMensaje3, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
+        audioSource.PlayOneShot(sonidoNotificacion);
     }
 }

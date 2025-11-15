@@ -35,6 +35,10 @@ public class MensajitoAnimation : MonoBehaviour
     private Vector3 positionOriginalPrimerMensaje;
     private Vector3 positionOriginalSegundoMensaje;
     private Vector3 positionOriginalTercerMensaje;
+
+    private Vector3 scaleOriginalPrimerMensaje;
+    private Vector3 scaleOriginalSegundoMensaje;
+    private Vector3 scaleOriginalTercerMensaje;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,6 +50,10 @@ public class MensajitoAnimation : MonoBehaviour
         positionOriginalPrimerMensaje = primerMensaje.transform.localPosition;
         positionOriginalSegundoMensaje = segundoMensaje.transform.localPosition;
         positionOriginalTercerMensaje = tercerMensaje.transform.localPosition;
+
+        scaleOriginalPrimerMensaje = primerMensaje.transform.localScale;
+        scaleOriginalSegundoMensaje = segundoMensaje.transform.localScale;
+        scaleOriginalTercerMensaje = tercerMensaje.transform.localScale;
     }
 
     // Update is called once per frame
@@ -57,7 +65,7 @@ public class MensajitoAnimation : MonoBehaviour
 
             if (timerPrimer > 5)
             {
-                LeanTween.move(primerMensaje, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
+                LeanTween.scale(primerMensaje, new Vector3(0f, 0f, 0f), velocidadFinal);
             }
 
         }
@@ -67,7 +75,16 @@ public class MensajitoAnimation : MonoBehaviour
 
             if (timerSegundo > 5)
             {
-                LeanTween.move(segundoMensaje, oldPosition, velocidadDeAnimacion).setEase(curvaFinal);
+                LeanTween.scale(segundoMensaje, new Vector3(0f, 0f, 0f), velocidadFinal);
+            }
+        }
+        if (juegoActivoTercero)
+        {
+            timerTercero = timerTercero + Time.deltaTime;
+
+            if (timerTercero > 5)
+            {
+                LeanTween.scale(tercerMensaje, new Vector3(0f, 0f, 0f), velocidadFinal);
             }
         }
     }

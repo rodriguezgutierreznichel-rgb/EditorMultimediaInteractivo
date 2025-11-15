@@ -8,9 +8,15 @@ public class ObjectMachine : MonoBehaviour
 
     public GameObject panelDeTechos, panelParedes, panelDecoraciones, panelOtros;
 
+    public AudioClip sonidoClick;
+    private AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
         CambiarEstado(new EstadoObjetoNinguno());
     }
 
@@ -35,6 +41,7 @@ public class ObjectMachine : MonoBehaviour
     {
         CambiarEstado(new EstadoTechos());
         panelDeObjetos.SetActive(true);
+        audioSource.PlayOneShot(sonidoClick);
     }
     public void AplicarObjetoTechos()
     {
@@ -44,21 +51,25 @@ public class ObjectMachine : MonoBehaviour
     {
         CambiarEstado(new EstadoPared());
         panelDeObjetos.SetActive(true);
+        audioSource.PlayOneShot(sonidoClick);
 
     }
     public void EntrarEnModoObjetosDeDecoraciones()
     {
         CambiarEstado(new EstadoDecoracion());
         panelDeObjetos.SetActive(true);
+        audioSource.PlayOneShot(sonidoClick);
     }
     public void EntrarEnModoObjetosDeOtros()
     {
         CambiarEstado(new EstadoOtros());
         panelDeObjetos.SetActive(true);
+        audioSource.PlayOneShot(sonidoClick);
     }
     public void SalirDelMenuObjeto()
     {
         panelDeObjetos.SetActive(false);
         panelObjetos.SetActive(false);
+        audioSource.PlayOneShot(sonidoClick);
     }
 }
