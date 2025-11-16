@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31dcf2c4404400e45b24ad021846b675
+    m_Address: MENSAJITOS_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 449f0b655c793ea46be03ee3948b5170
     m_Address: ADVERTENCIA_en-US
     m_ReadOnly: 1
@@ -33,12 +39,30 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3ee21170e5351f4f941cba1bc936fe0
+    m_Address: MenuDeObjetosTechos_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9cd93b2bbf521c44b3e99a688eceb9b
+    m_Address: UI_OBJETOS_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e9f089e42cbcb434391c81de316990d7
     m_Address: TEXTOS DE INTERFAZES_en-US
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en-US
     - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eed2c329a376e4b47a0c504608f1d55a
+    m_Address: MenuDeObjetosParedes_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: e0a92287e299e6b498a24ef55450b27c, type: 2}

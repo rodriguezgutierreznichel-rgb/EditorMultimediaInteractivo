@@ -437,7 +437,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 35, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &67346087
 MonoBehaviour:
@@ -623,6 +623,7 @@ MonoBehaviour:
   botonMensaje2: {fileID: 1852665357}
   botonMensaje3: {fileID: 777582755}
   sonidoNotificacion: {fileID: 8300000, guid: ac00a294c98fbca46b8d19fb4b8b668a, type: 3}
+  sonidoClick: {fileID: 8300000, guid: 2089d5329897f2d4bb6735033658bdd6, type: 3}
   curvaInicial: 23
   curvaFinal: 23
   velocidadDeAnimacion: 1
@@ -852,7 +853,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -70.098, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202722145
 MonoBehaviour:
@@ -1218,7 +1219,7 @@ GameObject:
   - component: {fileID: 234805432}
   - component: {fileID: 234805431}
   m_Layer: 5
-  m_Name: Text crear
+  m_Name: Text techo4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1645,7 +1646,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 35, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263511679
 MonoBehaviour:
@@ -3415,7 +3416,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 68.2, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489923745
 MonoBehaviour:
@@ -3662,7 +3663,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -36.898, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &492739134
 MonoBehaviour:
@@ -3782,7 +3783,7 @@ GameObject:
   - component: {fileID: 494491823}
   - component: {fileID: 494491822}
   m_Layer: 5
-  m_Name: Text eliminar
+  m_Name: Text techo5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4223,7 +4224,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 114.6, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &640046838
 MonoBehaviour:
@@ -4368,7 +4369,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -70.098, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660472293
 MonoBehaviour:
@@ -4883,7 +4884,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -36.898, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772145558
 MonoBehaviour:
@@ -5193,6 +5194,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 77420314}
+        m_TargetAssemblyTypeName: BotonAnimation, Assembly-CSharp
+        m_MethodName: EscucharMusica
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &777582758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5363,7 +5376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PULSA EL BOTON "ELIMINAR" PARA DESTRUIR LOS OBJETOS QUE NO TE GUSTEN.
+  m_text: -PULSA EL BOTON "ELIMINAR" PARA DESTRUIR LOS OBJETOS QUE NO TE GUSTEN.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5390,7 +5403,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.9
+  m_fontSize: 23.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5479,7 +5492,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 68.2, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &791338914
 MonoBehaviour:
@@ -5797,7 +5810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PULSA LOS BOTONES "MOVER" Y "ROTAR" PARA MODIFICAR LA CASA A TU GUSTO
+  m_text: -PULSA LOS BOTONES "MOVER" Y "ROTAR" PARA MODIFICAR LA CASA A TU GUSTO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5824,7 +5837,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.95
+  m_fontSize: 23.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6073,7 +6086,7 @@ GameObject:
   - component: {fileID: 877189653}
   - component: {fileID: 877189652}
   m_Layer: 5
-  m_Name: Text pausa
+  m_Name: Text techo3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6234,7 +6247,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -70.098, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877765376
 MonoBehaviour:
@@ -6379,7 +6392,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 114.6, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887068506
 MonoBehaviour:
@@ -6654,8 +6667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.3399963, y: 0}
+  m_SizeDelta: {x: 40.900005, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895978413
 MonoBehaviour:
@@ -6931,7 +6944,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -36.898, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &919774551
 MonoBehaviour:
@@ -7892,7 +7905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PULSA EL BOTON "CREAR" PARA EMPEZAR A CONSTRUIR TU HOGAR.
+  m_text: -PULSA EL BOTON "CREAR" PARA EMPEZAR A CONSTRUIR TU HOGAR.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7919,7 +7932,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7983,7 +7996,7 @@ GameObject:
   - component: {fileID: 1144545754}
   - component: {fileID: 1144545753}
   m_Layer: 5
-  m_Name: Text mover
+  m_Name: Text techo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8005,8 +8018,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.5749903, y: 0}
+  m_SizeDelta: {x: 56.329983, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1144545753
 MonoBehaviour:
@@ -8143,6 +8156,25 @@ MonoBehaviour:
   botonRotar: {fileID: 1357139723}
   botonCrear: {fileID: 1213528460}
   botonEliminar: {fileID: 1803035443}
+  mensaje1: {fileID: 1131637240}
+  mensaje2: {fileID: 817294311}
+  mensaje3: {fileID: 782184736}
+  botonSalirObj: {fileID: 1431525441}
+  textoCrear: {fileID: 1873943595}
+  botonParedes: {fileID: 320554763}
+  botonTechos: {fileID: 897033554}
+  botonDecoraciones: {fileID: 1278692373}
+  botonOtros: {fileID: 2093377030}
+  techo1: {fileID: 1144545753}
+  techo2: {fileID: 1327483400}
+  techo3: {fileID: 877189652}
+  techo4: {fileID: 234805431}
+  techo5: {fileID: 494491822}
+  pared1: {fileID: 0}
+  pared2: {fileID: 0}
+  pared3: {fileID: 0}
+  pared4: {fileID: 0}
+  pared5: {fileID: 0}
 --- !u!4 &1147214358
 Transform:
   m_ObjectHideFlags: 0
@@ -8271,7 +8303,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 114.6, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159710218
 MonoBehaviour:
@@ -9064,7 +9096,7 @@ GameObject:
   - component: {fileID: 1327483401}
   - component: {fileID: 1327483400}
   m_Layer: 5
-  m_Name: Text rotar
+  m_Name: Text techo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10337,7 +10369,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 68.2, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1503222140
 MonoBehaviour:
@@ -10920,6 +10952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   efecto: {fileID: 104829970813648393, guid: d3015b7eea383f64d8b81f965cc466e7, type: 3}
   sonidoExplosion: {fileID: 8300000, guid: d968497d6db6b2a428e819b7f137cf10, type: 3}
+  sonidoClick: {fileID: 8300000, guid: 2089d5329897f2d4bb6735033658bdd6, type: 3}
 --- !u!1 &1544500993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11488,7 +11521,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 35, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663255268
 MonoBehaviour:
@@ -11633,7 +11666,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 35, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1666183882
 MonoBehaviour:
@@ -11759,7 +11792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1668393025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11883,7 +11916,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -70.098, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690463767
 MonoBehaviour:
@@ -13006,6 +13039,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 77420314}
+        m_TargetAssemblyTypeName: BotonAnimation, Assembly-CSharp
+        m_MethodName: EscucharMusica
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1852665360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13187,7 +13232,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 713, y: 71.379974}
-  m_SizeDelta: {x: 153.4379, y: 50}
+  m_SizeDelta: {x: 203.82, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873943595
 MonoBehaviour:
@@ -13243,8 +13288,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -13373,6 +13418,18 @@ MonoBehaviour:
       - m_Target: {fileID: 77420312}
         m_TargetAssemblyTypeName: MensajitoAnimation, Assembly-CSharp
         m_MethodName: PrimerMensaje
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 77420314}
+        m_TargetAssemblyTypeName: BotonAnimation, Assembly-CSharp
+        m_MethodName: EscucharMusica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13593,7 +13650,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 114.6, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886991378
 MonoBehaviour:
@@ -13979,7 +14036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1954065897
 Transform:
   m_ObjectHideFlags: 0
@@ -14038,7 +14095,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 68.2, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989928524
 MonoBehaviour:
@@ -14183,7 +14240,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -36.898, y: 10.292}
-  m_SizeDelta: {x: 105.098, y: 84.384}
+  m_SizeDelta: {x: 135.04, y: 84.384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2037702987
 MonoBehaviour:

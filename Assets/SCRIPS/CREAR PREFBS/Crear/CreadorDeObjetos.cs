@@ -9,7 +9,7 @@ public class CreadorDeObjetos : MonoBehaviour
     GameObject efecto;
 
     public AudioClip sonidoExplosion;
-   
+   public AudioClip sonidoClick;
     private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,6 +37,7 @@ public class CreadorDeObjetos : MonoBehaviour
         if (currentGameObject.GetComponent<Collider>() == null)
         {
             currentGameObject.AddComponent<BoxCollider>();
+            audioSource.PlayOneShot(sonidoClick);
         }
     }
 

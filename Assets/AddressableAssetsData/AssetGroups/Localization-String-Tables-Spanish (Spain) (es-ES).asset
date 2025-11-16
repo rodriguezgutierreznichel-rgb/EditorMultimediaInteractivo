@@ -15,14 +15,38 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Spanish (Spain) (es-ES)
   m_GUID: f289c1b6df490734bbbbe85b62049bce
   m_SerializeEntries:
+  - m_GUID: 041fb108e6ff63e489d034eff287de63
+    m_Address: MENSAJITOS_es-ES
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-ES
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 198b3a388b9157a4098302e3ee3c4d16
+    m_Address: MenuDeObjetosTechos_es-ES
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-ES
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53844dcbe6292f941a1300af8cbc085b
     m_Address: ADVERTENCIA_es-ES
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es-ES
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63e8dc839ba718746bdbb3fc9f86cde1
+    m_Address: MenuDeObjetosParedes_es-ES
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-ES
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8286d985e9efcc74cbc4ee36f90b4823
     m_Address: ACCION_es-ES
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-ES
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 956b5d63a7ce9ea47a125ec541831fb1
+    m_Address: UI_OBJETOS_es-ES
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es-ES

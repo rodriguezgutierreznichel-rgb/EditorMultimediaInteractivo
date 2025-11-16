@@ -6,6 +6,7 @@ public class BotonAnimation : MonoBehaviour
     public GameObject mensajito, botonMensaje1, botonMensaje2, botonMensaje3;
 
     public AudioClip sonidoNotificacion;
+    public AudioClip sonidoClick;
     private AudioSource audioSource;
 
     [SerializeField]
@@ -110,6 +111,7 @@ public class BotonAnimation : MonoBehaviour
         LeanTween.move(botonMensaje1, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
         audioSource.PlayOneShot(sonidoNotificacion);
         
+
     }
     public void SegundaNotificacion()
     {
@@ -139,5 +141,9 @@ public class BotonAnimation : MonoBehaviour
 
         LeanTween.move(botonMensaje3, newPosition, velocidadDeAnimacion).setEase(curvaFinal);
         audioSource.PlayOneShot(sonidoNotificacion);
+    }
+    public void EscucharMusica()
+    {
+        audioSource.PlayOneShot(sonidoClick);
     }
 }

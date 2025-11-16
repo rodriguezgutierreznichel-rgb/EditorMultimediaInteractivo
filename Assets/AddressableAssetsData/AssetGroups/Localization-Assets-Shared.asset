@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: ad5b9d0c372ed1c4ebb6d028c3314bd4
   m_SerializeEntries:
+  - m_GUID: 0bb35c2383b774a4a85f272f21078683
+    m_Address: Assets/Localization/MenuDeObjetosTechos Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 16357bb7a1d47014994de6e9ffc86a6a
     m_Address: Assets/Localization/INTERFAZ DE PAUSA Shared Data.asset
     m_ReadOnly: 1
@@ -25,6 +30,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b219548805fe1148b24d048e2b8eca6
+    m_Address: Assets/Localization/MENSAJITOS Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6936bd2134e81d342b3604914f3c3063
+    m_Address: Assets/Localization/MenuDeObjetosParedes Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 844de420d406f67458b2b96d95762e56
     m_Address: Assets/Localization/TEXTOS DE INTERFAZES Shared Data.asset
     m_ReadOnly: 1
@@ -32,6 +47,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8602c75655a2c404da658824a87ff6fe
     m_Address: Assets/Localization/ADVERTENCIA Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e38b77f252f1b364fadc176423074ff5
+    m_Address: Assets/Localization/UI_OBJETOS Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
