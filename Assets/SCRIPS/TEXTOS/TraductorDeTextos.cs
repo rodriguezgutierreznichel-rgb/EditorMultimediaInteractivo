@@ -56,8 +56,7 @@ public class TraductorDeTextos : MonoBehaviour
         techo4.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 4");
         techo5.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 5");
 
-        pared1.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Pared 1");
-
+        
 
 
 
