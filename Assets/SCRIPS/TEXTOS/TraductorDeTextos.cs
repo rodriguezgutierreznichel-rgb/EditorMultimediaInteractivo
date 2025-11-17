@@ -13,8 +13,7 @@ public class TraductorDeTextos : MonoBehaviour
 
     public TextMeshProUGUI botonSalirObj, textoCrear, botonParedes, botonTechos, botonDecoraciones, botonOtros;
 
-    public TextMeshProUGUI techo1, techo2, techo3, techo4, techo5;
-    public TextMeshProUGUI pared1, pared2, pared3, pared4, pared5;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,11 +49,7 @@ public class TraductorDeTextos : MonoBehaviour
         botonDecoraciones.text = LocalizationSettings.StringDatabase.GetLocalizedString("UI_OBJETOS", "-Decoracion");
         botonOtros.text = LocalizationSettings.StringDatabase.GetLocalizedString("UI_OBJETOS", "-Otros");
 
-        techo1.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 1");
-        techo2.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 2");
-        techo3.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 3");
-        techo4.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 4");
-        techo5.text = LocalizationSettings.StringDatabase.GetLocalizedString("MenuDeObjetosTechos", "-Techo 5");
+      
 
         
 
