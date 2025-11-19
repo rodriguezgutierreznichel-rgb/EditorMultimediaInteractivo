@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObjectMachine : MonoBehaviour
 {
-    private IEstadoObjetos estadoActual; // Guarda el estado actual de la máquina de objetos (patrón Estado).
+    private IEstadoObjetos estadoActual; // Guarda el estado actual de la máquina de objetos.
 
     public GameObject panelDeObjetos, panelObjetos; // Paneles del menú principal y de objetos.
     public GameObject panelDeTechos, panelParedes, panelDecoraciones, panelOtros; // Paneles específicos para cada categoría.
@@ -43,10 +43,7 @@ public class ObjectMachine : MonoBehaviour
         audioSource.PlayOneShot(sonidoClick); // Reproduce sonido de click
     }
 
-    public void AplicarObjetoTechos()
-    {
-        // Aquí se implementaría la lógica para aplicar un objeto de techo
-    }
+    
 
     public void EntrarEnModoObjetosDeParedes()
     {
