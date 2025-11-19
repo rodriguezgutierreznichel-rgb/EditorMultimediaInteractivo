@@ -1,84 +1,82 @@
-using UnityEngine;
+锘縰sing UnityEngine;
 
 public class MoverObjetos : MonoBehaviour
 {
-    bool modoMover = false;
-    GameObject objetoSeleccionado = null;
+    bool modoMover = false;  //Indica si el "modo mover" est谩 activado o no.
 
-    public AudioClip sonidoClick;
-    private AudioSource audioSource;
+    GameObject objetoSeleccionado = null; //Guarda el objeto que vamos a mover, inicialmente no hay ninguno.
+
+    public AudioClip sonidoClick; //Almacena el sonido que se reproducir谩 al activar el modo mover.
+
+    private AudioSource audioSource; //Variable que nos permitir谩 controlar un componente de sonido.
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.playOnAwake = false;
+        audioSource = gameObject.AddComponent<AudioSource>(); //Le agrega un "parlante" (AudioSource) al objeto para reproducir sonidos.
+
+        audioSource.playOnAwake = false; //Evita que el sonido se reproduzca autom谩ticamente al inicio del juego.
     }
 
     void Update()
     {
-        if (!modoMover) return;
+        if (!modoMover) return; //Si el modo mover no est谩 activo, no hace nada. Evita que se mueva accidentalmente.
 
-        // Selecci髇 de objeto con clic izquierdo
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) //Detecta click izquierdo del rat贸n.
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // 馃煝 Crea un rayo desde la c谩mara hacia el mouse.
+            RaycastHit hit; //Guardar谩 informaci贸n del objeto golpeado por el rayo.
 
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit)) //Lanza el rayo y verifica si golpea un objeto con collider.
             {
-                GameObject obj = hit.collider.gameObject;
+                GameObject obj = hit.collider.gameObject; //Obtenemos el objeto golpeado.
 
-                if (!obj.CompareTag("Escenario"))
+                if (!obj.CompareTag("Escenario")) //Si el objeto NO es el escenario, podemos seleccionarlo.
                 {
-                    objetoSeleccionado = obj;
-                    Debug.Log("Objeto seleccionado para mover: " + objetoSeleccionado.name);
+                    objetoSeleccionado = obj;  //Guardamos el objeto seleccionado.
+
+                    Debug.Log("Objeto seleccionado para mover: " + objetoSeleccionado.name); //Muestra en consola qu茅 objeto seleccionamos.
                 }
             }
         }
 
-        // Mover objeto seleccionado sobre XZ con el rat髇
-        if (objetoSeleccionado != null)
+        if (objetoSeleccionado != null) //Si hay un objeto seleccionado, podemos moverlo.
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //Creamos otro rayo desde la c谩mara.
             RaycastHit hit;
 
-            // Raycast hacia el plano del escenario para mover en XZ
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit)) //Lanza el rayo para encontrar la posici贸n donde queremos moverlo.
             {
-                Vector3 nuevaPos = objetoSeleccionado.transform.position;
-                nuevaPos.x = hit.point.x;
-                nuevaPos.z = hit.point.z;
-                objetoSeleccionado.transform.position = nuevaPos;
+                Vector3 nuevaPos = objetoSeleccionado.transform.position; //Guardamos la posici贸n actual del objeto.
+                nuevaPos.x = hit.point.x; //Cambiamos solo la posici贸n X.
+                nuevaPos.z = hit.point.z; //Cambiamos solo la posici贸n Z.
+                objetoSeleccionado.transform.position = nuevaPos; //Aplicamos la nueva posici贸n al objeto.
             }
 
-            // Ajustar altura con rueda del rat髇
-            float scroll = Input.GetAxis("Mouse ScrollWheel");
+            float scroll = Input.GetAxis("Mouse ScrollWheel"); //Detecta movimiento de la rueda del rat贸n.
             if (scroll != 0f)
             {
-                Vector3 pos = objetoSeleccionado.transform.position;
-                pos.y += scroll * 2f; // velocidad de subida/bajada
-                objetoSeleccionado.transform.position = pos;
+                Vector3 pos = objetoSeleccionado.transform.position; //Guardamos la posici贸n actual.
+                pos.y += scroll * 2f; //Subimos o bajamos el objeto seg煤n la rueda.
+                objetoSeleccionado.transform.position = pos; //Aplicamos el cambio en Y.
             }
         }
 
-        // Clic derecho cancela modo mover
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1)) //Click derecho cancela el modo mover.
         {
-            objetoSeleccionado = null;
-            modoMover = false;
-            Debug.Log("Modo mover cancelado con clic derecho");
+            objetoSeleccionado = null; //Dejamos de seleccionar el objeto.
+            modoMover = false; //Desactivamos el modo mover.
+            Debug.Log("Modo mover cancelado con clic derecho"); // 馃煝 Mensaje en consola.
         }
     }
 
-    // Funci髇 p鷅lica para bot髇
     public void ActivarModoMover()
     {
-        audioSource.PlayOneShot(sonidoClick);
+        audioSource.PlayOneShot(sonidoClick); //Reproduce el sonido de click una sola vez.
 
-        modoMover = true;
-        objetoSeleccionado = null;
-        Debug.Log("Modo mover activado: selecciona un objeto, mueve con rat髇 y ajusta altura con rueda, clic derecho para cancelar");
+        modoMover = true; //Activamos el modo mover.
+        objetoSeleccionado = null; // Reiniciamos la selecci贸n de objeto.
+        Debug.Log("Modo mover activado: selecciona un objeto, mueve con rat贸n y ajusta altura con rueda, clic derecho para cancelar"); // 馃煝 Explicaci贸n en consola.
     }
 }
+
